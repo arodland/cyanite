@@ -56,7 +56,8 @@
    :id            path
    :allowChildren (not leaf)
    :expandable    (not leaf)
-   :leaf          leaf})
+   :leaf          leaf
+   :path          path})
 
 (defrecord CassandraIndex [options session
                            insert-segmentq insert-pathq
